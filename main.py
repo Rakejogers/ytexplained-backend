@@ -25,7 +25,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# text link https://www.youtube.com/watch?v=DXDe-2BC4cE
+# test link https://www.youtube.com/watch?v=DXDe-2BC4cE
 
 @app.get("/ytexplainer")
 def root(yt_id):
@@ -60,5 +60,4 @@ def root(yt_id):
       raise HTTPException(
           status_code=409, detail="Video is too long!")
   else:
-    time.sleep(5)
-    return {"message": "The YouTuber talks about their recent experiences, including moving and dealing with technical issues. They mention that their YouTube channel has seen significant growth and express their desire to improve public transportation in their city. They discuss their plans to replace certain bus lines with tram lines and make adjustments to the infrastructure. They encounter challenges and frustrations in implementing these changes but eventually find solutions. They express satisfaction with the increased capacity and hope that the improvements will help alleviate traffic issues.In this video, the YouTuber shares their personal experiences and updates while also showcasing their gameplay of a city-building game. They discuss their channel's growth and their intention to improve public transportation in the game. They demonstrate their planning and decision-making process, as well as the challenges they face in implementing their ideas. Ultimately, they find solutions and express satisfaction with the results. The video provides a mix of personal anecdotes, gaming content, and a glimpse into the YouTuber's creative problem-solving skills."}
+    return {"message": "Please enter a valid Youtube link!!!"}
