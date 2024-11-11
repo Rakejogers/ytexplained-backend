@@ -1,2 +1,2 @@
 # ytexplained-backend
-the backend of jakerogers.engineer website
+the backend of jakerogers.me website
